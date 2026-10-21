@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="基于 PanoSim 的人—车—环境一体化智能驾驶教学：项目实录、平台操作导学、多传感器配置、AEB 参数预演与人在环实验。">
+  <title>知行 · PanoSim 智能驾驶教学实验室</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside class="sidebar">
+  <a href="#overview" class="brand"><span class="brand-icon">知</span><span>知行实验室<small>INTELLIGENT DRIVING LAB</small></span></a>
+  <div class="side-label">教学工作台</div>
+  <nav aria-label="主导航">
+    <a href="#overview" class="active"><span>◈</span>项目概览</a>
+    <a href="#showcase"><span>▶</span>平台实录</a>
+    <a href="#platform"><span>▦</span>PanoSim 导学</a>
+    <a href="#experiment"><span>01</span>AEB 参数预演</a>
+    <a href="#sensing"><span>02</span>感知配置</a>
+    <a href="#comparison"><span>03</span>感知与控制对比</a>
+    <a href="#takeover"><span>04</span>人机接管</a>
+    <a href="#evaluation"><span>05</span>综合评价</a>
+    <a href="#guide"><span>▤</span>实验指导</a>
+  </nav>
+  <div class="side-note"><span class="live-dot"></span>PanoSim 教学配套<p>场景 · 感知 · 控制<br>从预演走向平台实践。</p><small>平台实录 + 实验导学<br>网页参数预演在本机运行</small></div>
+</aside>
+<main>
+  <header><div>汽车工程 / PanoSim 虚拟仿真实验教学</div><a href="#guide">实验任务 ↗</a></header>
+  <section id="overview" class="hero">
+    <div class="hero-copy"><div class="eyebrow">PANOSIM · HUMAN IN THE LOOP</div><h1>在虚拟道路上，<br>连接人、车与环境。</h1><p>基于 PanoSim 的智能驾驶虚拟仿真实验。<br>从场景构建、多传感器配置，到算法对比与驾驶员在环实践。</p><div class="hero-actions"><a href="#showcase" class="button primary">观看平台实录 <span>▶</span></a><a href="#platform" class="text-link">进入操作导学 →</a></div><div class="hero-facts"><span><b>05</b> 教学模块</span><span><b>30</b> 指导任务</span><span><b>02</b> 原创教学视频</span></div></div>
+    <a class="hero-art real-platform" href="#showcase" aria-label="观看项目驾驶模拟器实录"><img src="assets/driving-simulator.jpg" alt="项目视频中的多屏驾驶模拟器、方向盘与驾驶座舱" width="960" height="544"><span class="platform-photo-tag">项目实景 · 驾驶模拟器</span><span class="photo-play">▶</span><div class="photo-caption"><b>把虚拟场景，带入真实交互。</b><span>PanoSim 仿真 · 人在环教学</span></div></a>
+  </section>
+  <div class="notice"><b>平台实录与在线预演</b><span>视频展示项目的 PanoSim 平台与教学设计；本页提供配套导学和简化 AEB 预演。网页尚未连接校内 PanoSim 引擎、算法或设备，平台实践在授权工作站完成。</span></div>
+  <section id="showcase">
+    <div class="section-heading"><div><div class="eyebrow">PLATFORM IN ACTION</div><h2>走进你的 PanoSim 实验现场</h2><p>从设备实景了解实验环境，再跟随教学视频梳理完整任务。</p></div><span class="pill">项目自有视频</span></div>
+    <div class="video-layout">
+      <div class="video-main panel">
+        <video id="platformVideo" controls playsinline preload="metadata" poster="assets/driving-simulator.jpg" aria-label="PanoSim 项目展示视频"><source src="assets/project-overview.mp4" type="video/mp4">浏览器不支持视频播放，请使用下方链接打开视频。</video>
+        <div class="video-caption"><div><span class="eyebrow">PROJECT FILM</span><h3 id="videoTitle">项目展示 · 人—车—环境一体化</h3><p id="videoDescription">实验设备、虚拟场景、传感器配置和人在环教学的整体展示。</p></div><a id="videoDownload" href="assets/project-overview.mp4" target="_blank" rel="noopener">单独打开 ↗</a></div>
+        <p id="videoMessage" class="media-message" role="status"></p>
+      </div>
+      <div class="video-playlist">
+        <button class="video-choice selected" data-film="overview" aria-pressed="true"><span class="video-index">01</span><span><b>项目展示视频</b><small>02:05 · 平台与实验全貌</small></span><span>▶</span></button>
+        <button class="video-choice" data-film="guide" aria-pressed="false"><span class="video-index">02</span><span><b>教学引导视频</b><small>04:54 · 教学设计与任务实施</small></span><span>▶</span></button>
+        <div class="chapter-panel"><b>教学片段定位</b><small>点击切换至教学引导视频的对应片段</small><button data-seek="140"><span>02:20</span>WorldBuilder 场景构建 ↗</button><button data-seek="165"><span>02:45</span>车辆与多传感器配置 ↗</button><button data-seek="190"><span>03:10</span>算法接入与参数探究 ↗</button><button data-seek="210"><span>03:30</span>驾驶模拟器人在环 ↗</button><button data-seek="240"><span>04:00</span>教学方法与评价 ↗</button></div>
+      </div>
+    </div>
+    <p class="fine">视频及页面实景图片均来自项目提供的两段素材。视频中的教学助手、自动评价等内容为视频所述设计，不表示本网页已实现对应服务。</p>
+  </section>
+  <section id="platform">
+    <div class="section-heading"><div><div class="eyebrow">PANOSIM WORKFLOW</div><h2>从建模到评价，沿着平台完成实验</h2><p>把每一步操作与需要提交的证据对应起来。</p></div><a class="text-link" href="#sources">官方参考资料 ↗</a></div>
+    <div class="platform-workspace panel">
+      <div class="workflow-tabs" role="tablist" aria-label="PanoSim 实验流程">
+        <button id="tab-world" role="tab" aria-selected="true" aria-controls="workflowPanel" data-workflow="world">01 场景构建</button>
+        <button id="tab-sensor" role="tab" aria-selected="false" aria-controls="workflowPanel" data-workflow="sensor" tabindex="-1">02 车辆与传感器</button>
+        <button id="tab-control" role="tab" aria-selected="false" aria-controls="workflowPanel" data-workflow="control" tabindex="-1">03 算法与运行</button>
+        <button id="tab-driver" role="tab" aria-selected="false" aria-controls="workflowPanel" data-workflow="driver" tabindex="-1">04 人在环</button>
+        <button id="tab-analysis" role="tab" aria-selected="false" aria-controls="workflowPanel" data-workflow="analysis" tabindex="-1">05 数据与评价</button>
+      </div>
+      <div id="workflowPanel" role="tabpanel" aria-labelledby="tab-world" tabindex="0" class="workflow-content">
+        <figure><img id="workflowImage" src="assets/panosim-scene.jpg" alt="项目视频中的 WorldBuilder 道路与天气配置界面" width="960" height="544" loading="lazy"><figcaption id="workflowCaption">项目视频画面 · WorldBuilder 道路与天气配置</figcaption></figure>
+        <div class="workflow-description"><div id="workflowTool" class="eyebrow">WORLDBUILDER</div><h3 id="workflowTitle">先定义道路，再定义风险</h3><p id="workflowIntro"></p><ol id="workflowSteps"></ol><div class="evidence-box"><b>建议保存的证据</b><p id="workflowEvidence"></p></div><button id="workflowVideo" class="link-button">定位视频片段 ↗</button></div>
+      </div>
+    </div>
+    <div class="platform-boundary"><span>工具名称参考官方 PanoSim 5 资料及项目视频；具体菜单、字段和可用功能以校内安装版本及授权为准。</span><a href="#experiment">先做参数预演 ↓</a></div>
+    <div class="platform-route"><div><small>课前 · 本网页</small><b>观看 / 预演 / 设计方案</b></div><span>→</span><div><small>课中 · 授权工作站</small><b>PanoSim 仿真 / 人在环操作</b></div><span>→</span><div><small>课后 · 数据证据</small><b>导出日志 / 对比曲线 / 报告</b></div></div>
+  </section>
+  <section id="experiment">
+    <div class="section-heading"><div><div class="eyebrow">01 / PRE-LAB EXPLORATION</div><h2>上机之前，先设计一次 AEB 实验</h2><p>用简化模型预演参数趋势，再在 PanoSim 中配置同类工况、比较实际仿真输出。</p></div><span class="pill">浏览器预演 · 非 PanoSim 引擎</span></div>
+    <details class="panel parameter-map"><summary>PanoSim 上机时，需要核对哪些参数？</summary><div class="table-wrap"><table><thead><tr><th>网页预演项</th><th>PanoSim 中的核对位置</th><th>实验记录要求</th></tr></thead><tbody><tr><td>场景 / 主车速度 / 初始车距</td><td>场景与实验配置、主车和目标初始状态</td><td>保存场景标识、位置、速度和目标运动</td></tr><tr><td>道路附着 μ</td><td>道路、轮胎及车辆模型的对应配置</td><td>核对单位与生效范围；网页 μ 仅约束主车</td></tr><tr><td>TTC 阈值</td><td>所接入 AEB 算法的参数或代码</td><td>记录算法版本；不是所有控制器都使用 TTC</td></tr><tr><td>总延迟</td><td>感知、通信和执行链路的实测或注入延迟</td><td>按时间戳核验，不视为平台统一开关</td></tr></tbody></table></div></details>
+    <div class="lab-grid">
+      <form id="parameters" class="panel controls">
+        <div class="panel-title">实验配置 <button type="button" id="reset" class="link-button">恢复默认</button></div>
+        <label class="field">测试场景<select id="scenario"><option value="stopped">静止前车 · 避免追尾</option><option value="braking">前车减速 · 跟驰风险</option></select></label>
+        <label class="field">主车速度 <output id="speedOut"></output><input id="speed" type="range" min="20" max="100" step="5" value="50"><span class="range-ends"><span>20 km/h</span><span>100 km/h</span></span></label>
+        <label class="field">初始净车距 <output id="gapOut"></output><input id="gap" type="range" min="10" max="100" step="5" value="45"><span class="range-ends"><span>10 m</span><span>100 m</span></span></label>
+        <label class="field">道路附着系数 μ <output id="muOut"></output><input id="mu" type="range" min=".2" max=".9" step=".05" value=".75"><span class="range-ends"><span>低附着 0.20</span><span>高附着 0.90</span></span></label>
+        <label class="field">TTC 触发阈值 <output id="thresholdOut"></output><input id="threshold" type="range" min=".5" max="4" step=".25" value="2"><span class="range-ends"><span>0.5 s</span><span>4 s</span></span></label>
+        <label class="field">感知与执行总延迟 <output id="delayOut"></output><input id="delay" type="range" min="0" max="1.5" step=".1" value=".3"><span class="range-ends"><span>0 s</span><span>1.5 s</span></span></label>
+        <button class="button primary full" type="submit" id="run">▶ 运行网页预演</button>
+        <button class="button secondary full" type="button" id="exportPlan">↓ 下载 PanoSim 上机任务单</button>
+        <p class="fine">前车减速工况：前车初速为主车的 70%，在 1 秒时以 3 m/s² 减速。</p>
+      </form>
+      <div class="lab-display">
+        <div class="simulation panel"><div class="simulation-top"><span><i class="live-dot"></i> 俯视道路</span><span id="simTime">t = 0.00 s</span></div><canvas id="road" width="920" height="340" aria-label="主车和前车运动的俯视动画"></canvas><div class="sim-legend"><span><i class="legend-blue"></i>主车</span><span><i class="legend-dark"></i>前车</span><b id="simStatus" aria-live="polite">准备就绪</b></div></div>
+        <div class="metrics"><div><small>主车速度</small><strong id="liveSpeed">50.0 <em>km/h</em></strong></div><div><small>净车距</small><strong id="liveGap">45.0 <em>m</em></strong></div><div><small>碰撞时间 TTC</small><strong id="liveTtc">3.24 <em>s</em></strong></div></div>
+        <div class="panel chart-panel"><div class="panel-title">速度变化 <small>主车 / 前车 · km/h</small></div><canvas id="chart" width="920" height="220" aria-label="主车与前车速度随时间变化曲线"></canvas></div>
+        <div id="result" class="result" aria-live="polite">准备好后点击“运行实验”。建议固定其他参数，先比较三组 TTC 阈值。</div>
+      </div>
+    </div>
+  </section>
+  <section id="sensing">
+    <div class="section-heading"><div><div class="eyebrow">02 / SENSORBUILDER</div><h2>让传感器配置，对应可核对的输出</h2><p>结合项目视频中的 SensorBuilder 操作，先检查安装与覆盖，再分析感知对控制的影响。</p></div></div>
+    <div class="cards three"><article class="panel learning-card"><div class="card-number">CAMERA / 摄像头</div><h3>位置、姿态与视场</h3><p>在平台中核对相机安装位置、朝向和视场角，观察前方目标是否进入画面。视觉检测需要另接算法，不能把仿真图像直接称为 AI 检测结果。</p><button class="link-button workflow-jump" data-target-workflow="sensor">查看车辆与传感器导学 ↗</button></article><article class="panel learning-card"><div class="card-number">RADAR / 毫米波雷达</div><h3>目标距离与接近速度</h3><p>核对雷达覆盖区域、目标距离与相对速度；与真值比较时保持坐标、单位和时间戳一致。网页使用理想状态，仅演示总延迟影响。</p><button class="link-button preset" data-delay=".5">预演 0.5 s 总延迟 ↗</button></article><article class="panel learning-card"><div class="card-number">LIDAR / 激光雷达</div><h3>扫描、遮挡与可见性</h3><p>在平台中检查所选雷达模型的扫描与输出配置，比较遮挡前后的结果。具体点云或目标级输出取决于实际模型与授权。</p><button class="link-button workflow-jump" data-target-workflow="sensor">定位传感器操作流程 ↗</button></article></div>
+  </section>
+  <section id="comparison">
+    <div class="section-heading"><div><div class="eyebrow">03 / CONTROLLED COMPARISON</div><h2>用对照实验，回答一个问题</h2><p>固定当前场景、车速、车距、附着和延迟，只改变 TTC 阈值。</p></div><button id="batch" class="button secondary">运行三组对照 ↗</button></div>
+    <div class="panel table-wrap"><table><caption class="sr-only">TTC 阈值对照实验结果</caption><thead><tr><th>TTC 阈值</th><th>制动开始</th><th>最小净车距</th><th>最大减速度</th><th>结果</th></tr></thead><tbody id="compareRows"><tr><td colspan="5" class="empty">点击“运行三组对照”，比较 1.0、2.0、3.0 秒阈值。</td></tr></tbody></table></div><p class="fine">同一初始条件下提前触发通常可增加制动余量；本模型采用固定减速度，不能据此比较真实舒适性或 AI 模型优劣。</p>
+  </section>
+  <section id="takeover" class="takeover-section">
+    <div><div class="eyebrow">04 / DRIVER IN THE LOOP</div><h2>把驾驶员带入仿真闭环</h2><p>项目视频展示了驾驶模拟器上的人在环操作。平台实践中应保存提示时刻、有效人工输入及车辆响应，再比较接管前后的轨迹和加速度。</p><p>右侧先练习“看见提示 → 作出响应”：开始后等待 2–5 秒，看到提示再点击接管或按空格键。</p><p class="fine">网页仅测页面反应时间，未连接方向盘、踏板或运动平台，不等同于车辆控制权切换。</p><button class="link-button film-jump" data-video-time="210">观看项目人在环实录 ↗</button></div>
+    <div class="takeover-box"><div id="takeoverState" role="status" aria-live="polite">准备好，开始一次反应练习</div><strong id="reaction">— <small>ms</small></strong><div class="takeover-actions"><button class="button primary" id="startTakeover">开始练习</button><button class="button secondary" id="respond" disabled>接管 / 空格</button></div></div>
+  </section>
+  <section id="evaluation">
+    <div class="section-heading"><div><div class="eyebrow">05 / EVIDENCE & REFLECTION</div><h2>留下证据，再形成结论</h2><p>最近 50 次实验存于本机浏览器。下载记录后，可用于撰写实验报告。</p></div><button class="button secondary" id="export">↓ 导出 CSV 记录</button></div>
+    <div class="panel table-wrap"><table><caption class="sr-only">已完成的实验历史记录</caption><thead><tr><th>实验时间</th><th>场景</th><th>速度</th><th>附着 μ</th><th>TTC / 延迟</th><th>最小车距</th><th>结果</th></tr></thead><tbody id="historyRows"></tbody></table></div>
+    <div class="reflection panel"><label for="notes"><b>实验反思</b><span>你改变了什么？观察到了什么？结论有哪些适用条件？</span></label><textarea id="notes" rows="4" placeholder="例如：固定车速 50 km/h，比较三组 TTC 阈值，记录最小车距并解释差异……"></textarea><div><span id="saveState">反思自动保存在当前浏览器</span><button class="link-button" id="report">↓ 下载实验报告草稿</button></div></div>
+  </section>
+  <section id="guide">
+    <div class="section-heading"><div><div class="eyebrow">LEARNING PATH</div><h2>30 项任务，一条完整的学习路径</h2><p>依据项目教学设计整理。网页承担预演与导学；建模、算法接入和设备实践在 PanoSim 授权环境完成。</p></div></div>
+    <div id="taskList" class="task-list"></div>
+    <details class="panel method"><summary>模型假设与指标计算</summary><div><p>采用时间步长 0.02 s 的一维纵向模型。主车初速由 km/h 除以 3.6 换算为 m/s；车距为保险杠之间的净间距。TTC = 净车距 / 正的接近速度。接近速度不大于零时显示“∞”。</p><p>当 TTC 首次小于等于设定阈值时锁定触发事件，等待总延迟后开始制动；减速度为 min(6, μ × 9.81) m/s²，停车后不倒退。前车减速工况使用固定 3 m/s² 减速度，其运动不随道路附着参数变化。这里的 μ 仅约束主车。</p><p>仿真最长 20 s；净车距达到零视为碰撞并终止。正常结束时显示已模拟时段内的最小车距，不代表后续所有时间均安全。模型未包含横向运动、实际视觉检测、制动建立过程、轮胎非线性和路面坡度。</p><p>30 项指导任务来自教学设计；16 学时表示原课程计划，并非本示意网站已实现全部教学能力。当前没有账号、云端成绩或共享平台接口。清除浏览器存储会丢失本地记录。</p></div></details>
+  </section>
+  <section id="sources" class="source-panel panel"><div><div class="eyebrow">REFERENCES</div><h3>平台资料与内容来源</h3><p>项目实录与操作画面：项目提供的两段视频。教学任务：项目申报书。PanoSim 工具链和平台能力说明参考厂商资料；不据此推定校内已配置所有功能。</p></div><ul><li><a href="https://www.panosim.com/h-col-104.html" target="_blank" rel="noopener">PanoSim 官方 · 产品与工具链 ↗</a></li><li><a href="https://www.panosim.com/en/h-nd-40.html" target="_blank" rel="noopener">PanoSim 5 · 工具与二次开发说明 ↗</a></li><li><a href="https://www.panosim.com/h-col-181.html" target="_blank" rel="noopener">PanoSim 官方 · 仿真与测试应用 ↗</a></li></ul><p class="fine">资料核对：2026-10-20。本网站为项目教学配套页面，非 PanoSim 官方网站。</p></section>
+  <footer><a href="#overview" class="footer-brand">知行 · 智能驾驶教学实验室</a><span>PanoSim 教学配套 · V1.1</span><a href="#overview">回到顶部 ↑</a></footer>
+</main>
+<script src="model.js"></script><script src="app.js"></script><script src="platform.js"></script>
+</body></html>
